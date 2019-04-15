@@ -52,6 +52,8 @@ f_=io.Symmetrize_f_ij(nSites,f_)
 phi_0 = qState(nSites,1.0)  #vacuum
 phi_pair = qState(nSites,0.0) #zero (recipient)
 
+# creation operator of spin-up corresponds to the first nSites indices
+# creation operator of spin-dn corresponds to the nSites+1 to 2*nSites incides (look at function flavor to feel it).
 for ii in range(0,nSites):
   for jj in range(0,nSites):
     phi_pair += f_[ii][jj] * (c_(nSites+ii) * (c_(jj) * phi_0))

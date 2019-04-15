@@ -1,0 +1,17 @@
+
+
+#requirements:
+- python3
+
+
+
+#usage:
+$ python3 analytical_mVMC.py
+
+
+
+#note:
+1. you can use your own f_ij instead of loading it (simpler perhaps)
+2. this code has been benchmarked on analytical derivations -> it works
+
+
